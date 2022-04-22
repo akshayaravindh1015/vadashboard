@@ -1,0 +1,21 @@
+<div style="border: 1px solid">
+  <input type="file" id="pdf-file" (input)="handleFile($event)" />
+  <label>
+    <input
+      type="checkbox"
+      [checked]="mergeTable"
+      (change)="mergeTable = !mergeTable"
+      name="merge-table"
+    />
+    Merge table
+  </label>
+  <label>
+    <input
+      type="checkbox"
+      [checked]="mergeRmFrstLine"
+      (change)="mergeRmFrstLine = !mergeRmFrstLine"
+      name="merge-table-remove-first-line"
+    />
+    Merge table and remove first line
+  </label>
+</div>
